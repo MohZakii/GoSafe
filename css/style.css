@@ -1,0 +1,302 @@
+/* start global */
+body {
+  padding: 0;
+  margin: 0;
+}
+.py-100 {
+  padding: 100px;
+}
+.sec-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  width: 10%;
+  height: 2px;
+}
+.sec-title h1 {
+  font-size: 45px;
+}
+.sec-title span {
+  font-size: 14px;
+  letter-spacing: 3px;
+  display: block;
+  margin: 25px 0;
+}
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fa225c88;
+  transform: scaleX(0);
+  transition: 0.4s ease-in-out;
+}
+.inner span {
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.image {
+  padding: 0 50px 0 50px;
+  height: 400px;
+}
+.image:hover .inner {
+  transform: scaleX(1);
+}
+/* end global */
+/* start header */
+header {
+  height: 100vh;
+  background-image: url(../media/GoSafe/jake-blucker-OJX7gIU3E6U-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+  opacity: 1;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #20232c;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  z-index: 555;
+}
+.navigation ul li {
+  list-style-type: none;
+  text-align: center;
+}
+.navigation li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 25px;
+  display: block;
+  letter-spacing: 2px;
+  transition: 0.4s ease-in-out;
+}
+.navigation li a.active,
+.navigation li a:hover {
+  color: #fa225b;
+}
+.navigation.open {
+  opacity: 1;
+  visibility: visible;
+}
+nav {
+  transition: 0.4s ease-in-out;
+}
+nav .burger-button .lines {
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 6px;
+  transition: 0.4s;
+}
+nav.scroll {
+  background-color: #20232c;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 3px;
+  transition: 0.4s ease-in-out;
+}
+.logo,
+.burger-button {
+  z-index: 11111;
+  cursor: pointer;
+}
+nav .burger-button.rotate .lines:first-child {
+  transform: rotate(45deg) translateY(6px);
+  background-color: #fa225b;
+}
+nav .burger-button.rotate .lines:nth-child(2) {
+  display: none !important;
+}
+nav .burger-button.rotate .lines:last-child {
+  transform: rotate(-45deg) translateY(-5px);
+  background-color: #fa225b;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero h4 {
+  letter-spacing: 6px;
+  font-size: 20px;
+  color: #b4b2b4;
+}
+.hero h1 {
+  color: #e62e58;
+  font-size: 120px;
+}
+.hero span {
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+/* end header */
+/* start about */
+.about {
+  background-color: #20232c;
+  color: white;
+}
+/* End about */
+/* start why-work */
+.why-work {
+  background-color: #191c23;
+  color: white;
+}
+.why-work .circle {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+.recent-work {
+  /* background-color: #96c577; */
+  background-image: url("../media/GoSafe/greybg.jpg");
+  color: white;
+  padding-top: 100px;
+}
+.recent-work button {
+  background-color: #fa225b;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 4px;
+  transition: 0.4s ease-in-out;
+}
+.recent-work button:hover {
+  background-color: #fff;
+  color: #fa225b;
+  padding-left: 120px;
+}
+/* end recent-work */
+/* start Quote */
+.quote,
+.quote p {
+  background-image: url(../media/GoSafe/qute.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.carousel-item {
+  transition-delay: 0.5s;
+}
+.carousel-indicators li {
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.carousel-indicators li.active {
+  background-color: #fff;
+  border: none;
+}
+.brands span {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: #fff;
+}
+.swiper-container {
+  cursor: grab;
+  width: 100%;
+}
+/* End Quote */
+/* start Expert Design Advice */
+.expert {
+  background-color: #49629b;
+  color: #fff;
+  padding-top: 100px;
+}
+.card {
+  border-radius: 50px;
+  margin: 40px;
+  /* margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px; */
+}
+.expert .card {
+  background-color: #20232c;
+  padding-bottom: 50px;
+  border-radius: 50px;
+}
+.expert .card h5 {
+  color: #fa225b;
+  font-size: 28px;
+  cursor: pointer;
+  transition: s ease-in-out;
+}
+.expert .card h5:hover {
+  color: #fff;
+}
+/* end expert */
+/* start contact */
+.contact {
+  background-color: #ebeced;
+}
+.contact input {
+  font-size: 12px;
+  border-radius: none;
+}
+.contact input:focus,
+.contact button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.contact button {
+  background-color: #fa225b;
+  color: #fff;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 0.4s ease-in-out;
+}
+.contact button:hover {
+  background-color: #fff;
+  color: #fa225b;
+}
+.connecticut {
+  background-image: url(../media/GoSafe/simon-berger-vUM9aYstdtc-unsplashedited.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.imgcard {
+  border-radius: 60px;
+  padding-top: 30px;
+  height: 400px;
+  width: 300px;
+}
+.paragraph {
+  background-color: rgba(230, 46, 88, 0.3);
+  font-style: oblique;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sectitlegrey {
+  background-color: rgba(230, 46, 88, 0.3);
+  border-radius: 20px;
+}
+#map {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  /* display: contents; */
+}

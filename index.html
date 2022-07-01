@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/v4-shims.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b4674f1166.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Go Safe</title>
+  </head>
+  <body>
+    <!-- start Header -->
+    <header>
+      <div class="navigation d-flex justify-content-center align-items-center">
+        <ul>
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="map.html">Map</a>
+          </li>
+          <li>
+            <a href="process.html"> Process </a>
+          </li>
+          <li>
+            <a href="ourteam.html">Our Team </a>
+          </li>
+        </ul>
+      </div>
+      <nav
+        class="fixed-top d-flex justify-content-between align-items-center px-5 py-3"
+      >
+        <div class="logo">
+          <a
+            style="color: #fa225b; font-size: 35px"
+            class="navbar-brand"
+            href="index.html"
+          >
+            GO SAFE
+          </a>
+        </div>
+        <div class="burger-button">
+          <span class="lines d-block"></span>
+          <span class="lines d-block"></span>
+          <span class="lines d-block"></span>
+        </div>
+      </nav>
+      <div class="hero text-center">
+        <h4>Gradutaion Project</h4>
+        <h1>GO SAFE</h1>
+        <span class="text-muted">Accidents Big or Small, Avoid Them All</span>
+      </div>
+    </header>
+    <!--end header-->
+    <!-- start About -->
+    <div class="about py-100">
+      <div class="container">
+        <div class="sec-title text-center position-relative mb-5 pb-3">
+          <h1>About</h1>
+          <span class="text-muted text-uppercase">Description</span>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-muted">
+              This is a countrywide car accident dataset, which covers
+              connecticut state. <br /><br />
+              The accident data are collected from February 2016 to Dec 2021,
+              using multiple APIs that provide streaming traffic incident (or
+              event) data. These APIs broadcast traffic data captured by a
+              variety of entities, such as the US and state departments of
+              transportation, law enforcement agencies, traffic cameras, and
+              traffic sensors within the road-networks.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-muted">
+              A web App that aims to find safest road to use it for certain
+              purposes.Such as routing or any further analysis . <br /><br />
+              This happens by take specific extent and show the safest roads in
+              the same extent based on ML model output
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about connecticut py-100">
+      <div class="container">
+        <div class="sec-title text-center position-relative mb-5 pb-3">
+          <h1>Connecticut</h1>
+        </div>
+        <div class="row paragraph">
+          <div class="">
+            <p class="">
+              is the southernmost state in the New England region of the United
+              States. As of the 2010 census, it has the highest per-capita
+              income, second-highest level of human development behind
+              Massachusetts, and highest median household income in the United
+              States. <br /><br />
+              It is bordered by Rhode Island to the east, Massachusetts to the
+              north, New York to the west, and Long Island Sound to the south.
+              Its capital is Hartford and its most populous city is Bridgeport.
+              Historically the state is part of New England as well as the
+              tri-state area with New York and New Jersey, which together make
+              up metropolitan New York City. The state is named for the
+              Connecticut River which approximately bisects the state. The word
+              "Connecticut" is derived from various anglicized spellings of
+              "Quononoquett" (Conanicut), a Mohegan-Pequot word for "long tidal
+              river".
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="">
+              A web App that aims to find safest road to use it for certain
+              purposes.Such as routing or any further analysis . <br /><br />
+              This happens by take specific extent and show the safest roads in
+              the same extent based on ML model output
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- start work -->
+    <div class="why-work text-center py-100">
+      <div class="container">
+        <div class="sec-title text-center position-relative mb-5 pb-3">
+          <h1>Technology</h1>
+          <!-- <span class="text-muted text-uppercase">Machine Learning . Geoinformatics . Web</span> -->
+        </div>
+        <p class="text-muted">
+          We started with Collecting data from Kaggle then we made integration
+          between GIS and AI (GeoAi) we visualized that on a web application,
+          and we made a prototype on Connecticut state in USA
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="circle" data-perc=".6">
+              <i
+                class="fa-solid fa-robot"
+                style="
+                  font-size: 75px;
+                  align-self: center;
+                  position: absolute;
+                  top: 78px;
+                  left: 155px;
+                "
+              ></i>
+            </div>
+            <span class="text-uppercase">Machine Learning</span>
+          </div>
+          <div class="col-md-4">
+            <div class="circle" data-perc=".9">
+              <i
+                class="fa-solid fa-earth-americas"
+                style="
+                  font-size: 75px;
+                  align-self: center;
+                  position: absolute;
+                  top: 78px;
+                  left: 149px;
+                "
+              ></i>
+            </div>
+            <span class="text-uppercase">ArcGIS Api For JS</span>
+          </div>
+          <div class="col-md-4">
+            <div class="circle" data-perc=".7">
+              <i
+                class="fa-solid fa-map-location-dot"
+                style="
+                  font-size: 75px;
+                  align-self: center;
+                  position: absolute;
+                  top: 79px;
+                  left: 145px;
+                "
+              ></i>
+            </div>
+            <span class="text-uppercase">ArcGIS REST API </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="circle" data-perc=".7">
+              <i
+                class="fa-brands fa-js"
+                style="
+                  font-size: 75px;
+                  align-self: center;
+                  position: absolute;
+                  top: 78px;
+                  left: 155px;
+                "
+              ></i>
+            </div>
+            <span class="text-uppercase">HTML & CSS & JS</span>
+          </div>
+          <div class="col-md-4">
+            <div class="circle" data-perc=".8">
+              <i
+                class="fa-solid fa-location-pin"
+                style="
+                  font-size: 75px;
+                  align-self: center;
+                  position: absolute;
+                  top: 78px;
+                  left: 155px;
+                "
+              ></i>
+            </div>
+            <span class="text-uppercase">Arcgis pro</span>
+          </div>
+          <div class="col-md-4">
+            <div class="circle" data-perc=".95">
+              <i
+                class="fa-solid fa-pepper-hot"
+                style="
+                  font-size: 75px;
+                  align-self: center;
+                  position: absolute;
+                  top: 78px;
+                  left: 155px;
+                "
+              ></i>
+            </div>
+            <span class="text-uppercase">Flask</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end why-work -->
+    <!-- start Recent-work -->
+    <div class="recent-work">
+      <div class="container-fluid">
+        <div
+          class="sec-title sectitlegrey text-center position-relative mb-5 pb-3"
+        >
+          <h1>Features that are predicted to use</h1>
+          <!-- <span class="text-uppercase">Web . Branding . UI/UX</span> -->
+        </div>
+        <div class="row">
+          <div class="col-md-6 p-0">
+            <div class="image position-relative">
+              <img class="img-fluid" src="media/GoSafe/1.jpg" alt="" />
+              <div
+                class="inner d-flex justify-content-center align-items-center"
+              >
+                <span>Visibilty</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="image position-relative">
+              <img
+                class="img-fluid"
+                src="media/GoSafe/2.jpg"
+                alt=""
+                width="100%"
+              />
+              <div
+                class="inner d-flex justify-content-center align-items-center"
+              >
+                <span>Temperature</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="image position-relative">
+              <img class="img-fluid" src="media/GoSafe/3.jpg" alt="" />
+              <div
+                class="inner d-flex justify-content-center align-items-center"
+              >
+                <span>Time of accident</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="image position-relative">
+              <img class="img-fluid" src="media/GoSafe/7.jpg" alt="" />
+              <div
+                class="inner d-flex justify-content-center align-items-center"
+              >
+                <span>wind speed</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="image position-relative">
+              <img class="img-fluid" src="media/GoSafe/5.jpg" alt="" />
+              <div
+                class="inner d-flex justify-content-center align-items-center"
+              >
+                <span>Euclidean Length</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="image position-relative">
+              <img class="img-fluid" src="media/GoSafe/8.jpg" alt="" />
+              <div
+                class="inner d-flex justify-content-center align-items-center"
+              >
+                <span>Type of Road</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 p-0">
+            <button
+              class="text-uppercase w-100 py-5 boder-0"
+              onclick="window.location.href='map.html'"
+            >
+              Let's Start
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End recent-work -->
+    <!-- start Quote -->
+    <div class="quote py-100 text-center">
+      <div class="container">
+        <img src="media/images/quote.webp" />
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade py-5"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleFade"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                “Safety has to be everyone’s responsibility… everyone needs to
+                know that they are empowered to speak up if there’s an issue.”
+              </p>
+              <h6 class="font-weight-bolder text-uppercase py-3">
+                Captain Scott Kelly.
+              </h6>
+            </div>
+            <div class="carousel-item">
+              <p>
+                “If you don’t know, ask. Working with people is far better than
+                working against them — always bring together all the people and
+                information available to you!”
+              </p>
+              <h6 class="font-weight-bolder text-uppercase py-3">
+                Aidan O’Shannessy,.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Quote -->
+    <!-- start Expert Design Advice -->
+    <div class="expert">
+      <div class="container-fluid">
+        <div class="sec-title text-center position-relative mb-5 p-5">
+          <h1>Causes of Road Accidents</h1>
+          <span class="text-uppercase"
+            >Road accident is most unwanted thing to happen to a road user,
+            though they happen quite often. The most unfortunate thing is that
+            we don't learn from our mistakes on road. Most of the road users are
+            quite well aware of the general rules and safety measures while
+            using roads but it is only the laxity on part of road users, which
+            cause accidents and crashes. Main cause of accidents and crashes are
+            due to human errors. We are elaborating some of the common behaviour
+            of humans which results in accident.</span
+          >
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-0">
+            <div class="card border-0">
+              <div class="image position-relative">
+                <img class="imgcard" src="media/GoSafe/speed.jpg" alt="" />
+                <div
+                  class="inner d-flex justify-content-center align-items-center"
+                >
+                  <span>Over Speeding:</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Over Speeding:</h5>
+                <p class="card-text text-muted">
+                  Most of the fatal accidents occur due to over speeding. It is
+                  a natural psyche of humans to excel. If given a chance man is
+                  sure to achieve infinity in speed. But when we are sharing the
+                  road with other users we will always remain behind some or
+                  other vehicle
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="card border-0">
+              <div class="image position-relative">
+                <img
+                  class="imgcard"
+                  src="media/GoSafe/drunk.jpg"
+                  width="100%"
+                  alt=""
+                />
+                <div
+                  class="inner d-flex justify-content-center align-items-center"
+                >
+                  <span>Drunken Driving:</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Drunken Driving:</h5>
+                <p class="card-text text-muted">
+                  Consumption of alcohol to celebrate any occasion is common.
+                  But when mixed with driving it turns celebration into a
+                  misfortune. Alcohol reduces concentration. It decreases
+                  reaction time of a human body. Limbs take more to react to the
+                  instructions of brain.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="card border-0">
+              <div class="image position-relative">
+                <img
+                  class="imgcard"
+                  src="media/GoSafe/phone.jpg"
+                  width="100%"
+                  alt=""
+                />
+                <div
+                  class="inner d-flex justify-content-center align-items-center"
+                >
+                  <span>Distraction to Driver:</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Distraction to Driver:</h5>
+                <p class="card-text text-muted">
+                  Though distraction while driving could be minor but it can
+                  cause major accidents. Distractions could be outside or inside
+                  the vehicle. The major distraction now a days is talking on
+                  mobile phone while driving. Act of talking on phone occupies
+                  major portion of brain and the smaller part handles the
+                  driving skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-0">
+            <div class="card border-0">
+              <div class="image position-relative">
+                <img
+                  class="imgcard"
+                  src="media/GoSafe/redline.jpg"
+                  width="100%"
+                  alt=""
+                />
+                <div
+                  class="inner d-flex justify-content-center align-items-center"
+                >
+                  <span>Red Light jumping:</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Red Light jumping:</h5>
+                <p class="card-text text-muted">
+                  It is a common sight at road intersections that vehicles cross
+                  without caring for the light. The main motive behind Red light
+                  jumping is saving time. The common conception is that stopping
+                  at red signal is wastage of time and fuel. Studies have shown
+                  that traffic signals followed properly by all drivers saves
+                  time and commuters reach destination safely and timely.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="card border-0">
+              <div class="image position-relative">
+                <img
+                  class="imgcard"
+                  src="media/GoSafe/setbelt.jpg"
+                  width="100%"
+                  alt=""
+                />
+                <div
+                  class="inner d-flex justify-content-center align-items-center"
+                >
+                  <span
+                    >Avoiding Safety Gears like seat belts and helmets:</span
+                  >
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Avoiding Safety Gears like seat belts and helmets:
+                </h5>
+                <p class="card-text text-muted">
+                  Use of seat belt in four-wheeler is now mandatory and not
+                  wearing seat belt invites penalty, same in the case of helmets
+                  for two wheeler drivers. Wearing seat belts and helmet has
+                  been brought under law after proven studies that these two
+                  things reduce the severity of injury during accidents.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="card border-0">
+              <div class="image position-relative">
+                <img
+                  class="imgcard"
+                  src="media/GoSafe/katie-moum-5FHv5nS7yGg-unsplash.jpg"
+                  width="100%"
+                  alt=""
+                />
+                <div
+                  class="inner d-flex justify-content-center align-items-center"
+                >
+                  <span>Detrimental effects of traffic on environment</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Detrimental effects of traffic on environment
+                </h5>
+                <p class="card-text text-muted">
+                  1. Safety <br />
+                  2. Noise <br />
+                  3. Land Consumption <br />4. Air Pollution <br />5. Degrading
+                  the Aesthetics
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end expert -->
+    <!-- start contact -->
+    <div class="contact py-100 text-center">
+      <div class="container">
+        <div class="sec-title text-center position-relative mb-5 p-5">
+          <h1>Your feedback</h1>
+          <span class="text-uppercase"
+            >We care about your safety as well as your feedback</span
+          >
+        </div>
+
+        <form>
+          <div
+            class="form d-flex flex-column justify-content-center align-items-center"
+          >
+            <input
+              type="text"
+              class="form-control w-50 mb-4 border-0 py-4"
+              placeholder=" Name"
+            />
+            <input
+              type="email"
+              class="form-control w-50 mb-4 border-0 py-4"
+              placeholder="Email"
+            />
+            <input
+              type="Phone"
+              class="form-control w-50 mb-4 border-0 py-4"
+              placeholder="Phone"
+            />
+            <input
+              type="text"
+              class="form-control w-50 mb-4 border-0 py-4"
+              placeholder="Comment"
+            />
+            <button id="submit" type="submit" class="btn w-50 py-3">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/file.js"></script>
+  </body>
+</html>

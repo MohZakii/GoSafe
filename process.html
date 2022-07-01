@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/v4-shims.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b4674f1166.js" crossorigin="anonymous"></script>
+    <title>Map</title>
+</head>
+<body>
+    <!-- start Header -->
+<header>
+    <div class="navigation d-flex justify-content-center align-items-center">
+        <ul>
+            <li>
+                <a href="index.html" >Home</a>
+            </li>
+            <li>
+                <a href='map.html'>Map</a>
+            </li>
+            <li>
+                <a href='process.html' class="active"> Process
+                </a>
+                </li>
+        <li>
+            <a href='ourteam.html'>Our Team
+            </a>
+            </li>
+        </ul>
+    </div>
+    <nav class=" fixed-top d-flex justify-content-between align-items-center  px-5 py-3">
+        <div class="logo">
+            <a style="color: #FA225B; font-size:35px;" class="navbar-brand" href="index.html">
+                GO SAFE
+            </a>
+        </div>
+        <div class="burger-button">
+            <span class="lines d-block"></span>
+            <span class="lines d-block"></span>
+            <span class="lines d-block"></span>
+        </div>
+    </nav>
+    <div class="hero text-center">
+        <h4>Process</h4>
+        <h1>Presentation About All Processing</h1>
+        
+    </div>
+</header>   
+ <!--end header-->
+ <div class="expert">
+    <div class="container-fluid">
+        <div class="sec-title text-center position-relative mb-5 p-5">
+            <h1>Expert Design Advice </h1>
+            <span class="text-uppercase">TRENDING DESIGN NEWS</span>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-12 p-0">
+                <div class="card border-0" >
+                    <div class="position-relative">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img  class="image  img-fluid" src="media/GoSafe/process/kagglelogo.png" alt="">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <img  class="image  img-fluid" src="media/GoSafe/process/esrilogo.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Collect Data from Kaggle And ESRI</h5>
+                        <p class="card-text text-muted">We have collected the USA  accidents dataset between 2016 and 2021  from Kaggle  .
+                            <br/>Also, We collected the road network dataset  from ESRI  .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 p-0">
+                <div class="card border-0" >
+                    <div class="position-relative">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img  class="image  img-fluid" src="media/GoSafe/process/Pro2.jpeg" alt="">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <img  class="image  img-fluid" src="media/GoSafe/process/Pro3.jpeg" alt="">
+
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Prepare Network layer </h5>
+                        <p class="card-text text-muted">
+                            1- Spatial join between the network layer and accidents data <br/>
+                            2- generate tesselation <br/>
+                            3- Hot spot and outlier analysis  <br/>
+                            4- Emerging hotspot and outlier analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 p-0">
+                <div class="card border-0" >
+                    <div class="position-relative">
+                        <img  class="image  img-fluid" src="media/GoSafe/process/colab.JPG" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Prepare the Accidents dataset and create a model</h5>
+                        <p class="card-text text-muted">
+                            1- Use colab <br/>
+                            2- Check Nulls and Duplicates vales <br/>
+                            3- Drop unnecessary columns <br/>
+                            4- Calculate columns (Eculidiun Lenght - Sinuisty - Road category )<br/>
+                            5- Check the distribution of attributes <br/>
+                            6- Deal with nan values <br/>
+                            7- Create a target label <br/>
+                            8- Data splitting and balancing  <br/>
+                            9- Choose and train model 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 p-0">
+                <div class="card border-0" >
+                    <div class="position-relative">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img  class="image  img-fluid" src="media/GoSafe/process/awslogo-image.webp" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <img  class="image  img-fluid" src="media/GoSafe/process/Flask.jpeg" alt="">
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Create Application Server and Deploy Model </h5>
+                        <p class="card-text text-muted">
+                            1- Installing flask and preparing the virtual environment ,<br/>
+                            2- load model using Pickle <br/>
+                            3- Create an application server and handle routing <br/>
+                            4- Receive the request and convert it to a 2D array <br/>
+                            5- We put our code on Docker image then upload to Docker hub <br/>
+                            6- From Docker hub we pull this image on EC2 <br/>
+                            7- We deploy this image as a Docker container on AWS 
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 p-0">
+                <div class="card border-0" >
+                    <div class="position-relative">
+                        <img  class="image  img-fluid" src="media/GoSafe/process/ArcGisApi.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Create Map View</h5>
+                        <p class="card-text text-muted">
+                            1- Use ArcGIS API for JS v4  <br/>
+                            2- Publishing network dataset on Esri server <br/>
+                            3- Making Esri request for the user's current extent  <br/> 
+                            4- Making Restfull API requests from OpenWeathermap.com with road long and latitude <br/>
+                            5- taking user time input currently or 24 hours later<br/>
+                            6- Create JS Object with required params to send to the model<br/>
+                            7- Receive model result and visualize it <br/>
+                            8- Creating polyline barriers layer for further analysis    
+                            
+                           
+                            
+                    </div>
+                </div>
+            </div>
+            
+               
+        </div> 
+    </div>
+</div>
+ 
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/file.js"></script>
+</body>
+</html>

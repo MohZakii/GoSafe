@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/v4-shims.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b4674f1166.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.23/esri/themes/dark/main.css"
+    />
+    <script src="https://js.arcgis.com/4.23/" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Map</title>
+  </head>
+  <body>
+    <!-- start Header -->
+    <header>
+      <div class="navigation d-flex justify-content-center align-items-center">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="map.html" class="active">Map</a>
+          </li>
+          <li>
+            <a href="process.html"> Process </a>
+          </li>
+          <li>
+            <a href="ourteam.html">Our Team </a>
+          </li>
+        </ul>
+      </div>
+      <nav
+        class="fixed-top d-flex justify-content-between align-items-center px-5 py-3"
+      >
+        <div class="logo">
+          <a
+            style="color: #fa225b; font-size: 35px"
+            class="navbar-brand"
+            href="index.html"
+          >
+            GO SAFE
+          </a>
+        </div>
+        <div class="burger-button">
+          <span class="lines d-block"></span>
+          <span class="lines d-block"></span>
+          <span class="lines d-block"></span>
+        </div>
+      </nav>
+      <div class="hero text-center">
+        <h4>Map</h4>
+        <h1>
+          Let's Predict <br />
+          The Safest Road
+        </h1>
+      </div>
+    </header>
+    <!--end header-->
+    <div class="about py-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <label style="color: #fa225b; font-size: 25px" for="solve"
+              >Select time prediction within the next 24 hours (Connecticut
+              Time).</label
+            ><br />
+            <select
+              class="btn btn-secondary m-3"
+              name="Hours"
+              id="hours"
+            ></select>
+            <button class="btn btn-danger" type="button" id="predict">
+              Predict
+            </button>
+            <br />
+            <br />
+            <div id="map"></div>
+            <div
+              id="BaseMapGalleryButton"
+              class="esri-component esri-widget--button esri-widget"
+              role="button"
+            >
+              <span
+                title="Show Basemap Gallery"
+                id="esri-icon-basemap"
+                class="esri-icon esri-icon-basemap"
+              ></span>
+            </div>
+            <div id="map"></div>
+
+            <div
+              id="LegendButton"
+              class="esri-component esri-widget--button esri-widget"
+              role="button"
+            >
+              <span
+                title="Show Legend"
+                id="esri-icon-legend"
+                class="esri-icon esri-icon-legend"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
