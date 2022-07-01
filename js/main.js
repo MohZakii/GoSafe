@@ -7,10 +7,6 @@ require([
   "esri/widgets/BasemapGallery",
   "esri/request",
   "esri/Graphic",
-  "esri/geometry/Polyline",
-  "esri/rest/route",
-  "esri/rest/support/RouteParameters",
-  "esri/rest/support/FeatureSet",
   "esri/rest/support/PolylineBarrier",
 ], (
   FeatureLayer,
@@ -21,10 +17,6 @@ require([
   BasemapGallery,
   esriRequest,
   Graphic,
-  Polyline,
-  route,
-  RouteParameters,
-  FeatureSet,
   PolylineBarrier
 ) => {
   // adding the api key
@@ -115,7 +107,8 @@ require([
           fetch(
             // b6a1d244375449bbe4ac12889634b68b new
             // f004107bf5aff5c33764a133031f3846 working
-            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=850a7ba50dcc47f35faff935194b4a78&units=imperial`,
+            // 850a7ba50dcc47f35faff935194b4a78 just for online
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=f004107bf5aff5c33764a133031f3846&units=imperial`,
             { method: "GET" }
           )
             .then(function (res) {
@@ -258,11 +251,15 @@ require([
     };
     return result;
   }
+
   function fillHoursList() {
     const hoursList = document.getElementById("hours");
     let Start_Time = Date.now();
     let date = new Date(Start_Time);
-    const hour = date.getHours() - 6;
+    let hour = date.getHours() - 6;
+    if (hour < 0) {
+      hour += 24;
+    }
     for (let i = 1; i <= 24; i++) {
       const element = document.createElement("option");
       element.value = i;
@@ -395,7 +392,7 @@ require([
   </td>
   <td>
   <ul style="list-style-type: none">
-    <li style="font-weight: bolder; color: green; padding-bottom: 5px">ـــــــــــــــــ</li>
+    <li style="font-weight: bolder; color: #00D30E; padding-bottom: 5px">ـــــــــــــــــ</li>
     <li style="font-weight: bolder; color: orange; padding-bottom: 5px">ـــــــــــــــــ</li>
     <li style="font-weight: bolder; color: red; padding-bottom: 5px">ـــــــــــــــــ</li>
   </ul>
