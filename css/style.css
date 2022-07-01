@@ -300,3 +300,6 @@ nav .burger-button.rotate .lines:last-child {
   margin: auto;
   /* display: contents; */
 }
+.navbar-brand {
+  font-weight: bolder;
+}

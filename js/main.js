@@ -1,20 +1,20 @@
 require([
-  "esri/layers/FeatureLayer",
-  "esri/widgets/Legend",
-  "esri/config",
   "esri/Map",
   "esri/views/MapView",
   "esri/widgets/BasemapGallery",
+  "esri/widgets/Legend",
+  "esri/layers/FeatureLayer",
+  "esri/config",
   "esri/request",
   "esri/Graphic",
   "esri/rest/support/PolylineBarrier",
 ], (
-  FeatureLayer,
-  Legend,
-  esriConfig,
   Map,
   MapView,
   BasemapGallery,
+  Legend,
+  FeatureLayer,
+  esriConfig,
   esriRequest,
   Graphic,
   PolylineBarrier
@@ -33,7 +33,6 @@ require([
     container: "map",
     center: [-72.699997, 41.599998],
     zoom: 15,
-    // zoom: 7,
   });
 
   // adding legend button
@@ -106,9 +105,8 @@ require([
 
           fetch(
             // b6a1d244375449bbe4ac12889634b68b new
-            // f004107bf5aff5c33764a133031f3846 working
             // 850a7ba50dcc47f35faff935194b4a78 just for online
-            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=f004107bf5aff5c33764a133031f3846&units=imperial`,
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=b6a1d244375449bbe4ac12889634b68b&units=imperial`,
             { method: "GET" }
           )
             .then(function (res) {
@@ -379,27 +377,25 @@ require([
   // to fill the legend
   function fillLegendDiv() {
     const legend = document.getElementsByClassName("esri-legend__message")[0];
-    legend.innerHTML = ` <h3>Predicted Road Categories</h3> 
-    <table>
-
-  <tr>
-  <td>
-  <ul>
-    <li>Low Risk</li>
-    <li>Medium Risk</li>
-    <li>High Risk</li>
-  </ul>
-  </td>
-  <td>
-  <ul style="list-style-type: none">
-    <li style="font-weight: bolder; color: #00D30E; padding-bottom: 5px">ـــــــــــــــــ</li>
-    <li style="font-weight: bolder; color: orange; padding-bottom: 5px">ـــــــــــــــــ</li>
-    <li style="font-weight: bolder; color: red; padding-bottom: 5px">ـــــــــــــــــ</li>
-  </ul>
-  </td>
-  </tr>
-</table>
-      `;
+    legend.innerHTML = `<h3>Predicted Road Categories</h3> 
+          <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>Low Risk</li>
+                    <li>Medium Risk</li>
+                    <li>High Risk</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul style="list-style-type: none">
+                    <li style="font-weight: bolder; color: #00D30E; padding-bottom: 5px">ـــــــــــــــــ</li>
+                    <li style="font-weight: bolder; color: orange; padding-bottom: 5px">ـــــــــــــــــ</li>
+                    <li style="font-weight: bolder; color: red; padding-bottom: 5px">ـــــــــــــــــ</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>`;
     console.log(legend);
   }
 });
