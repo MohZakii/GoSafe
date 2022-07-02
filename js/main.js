@@ -107,7 +107,7 @@ require([
             // b6a1d244375449bbe4ac12889634b68b new
             // 850a7ba50dcc47f35faff935194b4a78 just for online
             // e5084a94bfe01516af7553cc9ca2127a
-            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=b6a1d244375449bbe4ac12889634b68b&units=imperial`,
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=e5084a94bfe01516af7553cc9ca2127a&units=imperial`,
             { method: "GET" }
           )
             .then(function (res) {
